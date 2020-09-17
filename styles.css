@@ -1,0 +1,54 @@
+body {
+
+    color: whitesmoke;
+    border-radius: 10%;
+    background-color: skyblue;
+    
+
+
+}
+
+header, footer {
+    padding: 15px;
+    margin: 20px;
+    border-radius: 5%;
+    background-color: green;
+    text-align: center;
+
+
+
+}
+
+li {
+    display: inline-block;
+    border: brown 5px;
+    padding: 10px;
+    margin: 5px 50px;
+    background-color: burlywood;
+    color: whitesmoke;
+
+}
+
+section {
+    padding: 0px 5px;
+    margin: 20px;
+    background-color: green;
+    border-radius: 0px;
+
+
+}
+
+img {
+    border-radius: 10%;
+    margin: 5px 20px;
+    text-align: center;
+
+
+
+}
+
+p {
+    display: inline-block;
+    margin: 5px 20px;
+
+}
