@@ -5,6 +5,7 @@ function getHikerName() {
     document.write(yourName);
     }
 
+
     function whatTime() {
         var hourNow = new Date().getHours();
     if (hourNow > 18) {
@@ -19,14 +20,36 @@ function getHikerName() {
     }
     
     }
-    
-function fromWashington() {
-    if (confirm("Do you want to hike in Western or Eastern Washington?")) {
-        document.write("Lets find you a trail!");
-    } else {
-        document.write("No problem, just browsing...");
+function guessNumberOfSwitchBacks() {
+    var switchBackAnswer = prompt("How many switch backs are on this hike?");
+    if (switchBackAnswer > 30){
+        alert("Yes, Get ready to burn!")
+    } else if (switchBackAnswer < 29){
+        alert("Lucky you only a few!")
     }
 }
+
+function fromWashington() {
+    var correctAnswer = confirm("Do you want to hike in Western or Eastern washington?");
+    if (correctAnswer){
+        alert("Great! Lets find you a trail!");
+    } else {hv
+        alert("ok, just browsing")
+
+    
+    }
+}
+
+
+    //}
+    // if (confirm("Do you want to hike in Western or Eastern Washington?")) {
+        // document.write("Lets find you a trail!");
+    // } else {
+        // document.write("No problem, just browsing...");
+    //}
+
+
+
 
 
 
