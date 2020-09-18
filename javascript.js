@@ -1,36 +1,32 @@
-var yourName = "Hello fellow hiker " + prompt("What's your name?") + "!";
-var greeting; 
-var whereFrom = prompt('Are you from Washington?');
-    
+'use strict'
 
-
-if (yourName == 'Stacy'){
-    greeting = 'Welcome  ' + yourName;
-} else {
-    greeting = 'Welcome ' + yourName;
-}
-var today = new Date(); 
-var hourNow = today.getHours();
-
-if (hourNow > 18) {
-    greeting = 'Good evening fellow hiker!';
-} else if (hourNow > 12) {
-    greeting = 'Good afternoon fellow hiker!';
-} else if (hourNow > 0 ) {
-    greeting = 'Good morning fellow hiker!';
-} else {
-    greeting = 'Welcome!';
-}
-
-
-document.write(greeting);
-
-if (confirm("Do you want to hike in Western or Eastern Washington?")) {
-    say = "Great! Lets find you a trail!";
-    } else {
-        say = "No problem, just browsing...";
-
+function getHikerName() {
+    var yourName = prompt("Hello fellow hiker! What's your name?");
+    document.write(yourName);
     }
-document.write(say);
+
+    function whatTime() {
+        var hourNow = new Date().getHours();
+    if (hourNow > 18) {
+        document.write('Good evening fellow hiker!');
+    } else if (hourNow > 12) {
+        document.write('Good afternoon fellow hiker!');
+    } else if (hourNow > 0 ) {
+        document.write('Good morning fellow hiker!');
+    } else {
+        document.write('Welcome Hiker!');
+    
+    }
+    
+    }
+    
+function fromWashington() {
+    if (confirm("Do you want to hike in Western or Eastern Washington?")) {
+        document.write("Lets find you a trail!");
+    } else {
+        document.write("No problem, just browsing...");
+    }
+}
+
 
 
